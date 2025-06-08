@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deva Arista - Portofolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #1f1c2c, #928dab);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00f7ff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 1rem 0 0.2rem;
+    }
+
+    .typing {
+      color: #00f7ff;
+      font-weight: bold;
+      border-right: 2px solid #00f7ff;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    h2 {
+      border-left: 5px solid #00f7ff;
+      padding-left: 12px;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li::marker {
+      color: #00ffff;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1da851;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.postimg.cc/C1stHJXf/foto-pramuka.jpg" alt="Foto Deva Arista" class="profile-pic">
+    <h1 class="typing">Halo, saya Deva Arista</h1>
+    <p>Siswa SMA Negeri 1 Gringsing | Hobi Teknologi, Fotografi & Videografi</p>
+  </header>
+
+  <main class="container">
+
+    <div class="card">
+      <h2>Tentang Saya</h2>
+      <p>Saya Deva Arista, pelajar kelas 10-6 di SMA Negeri 1 Gringsing. Saya suka mengeksplorasi teknologi, membuat bot Telegram, dan belajar HTML & CSS untuk bikin web keren seperti ini!</p>
+    </div>
+
+    <div class="card">
+      <h2>Informasi Pribadi</h2>
+      <ul>
+        <li><strong>Nama:</strong> Deva Arista</li>
+        <li><strong>Tanggal Lahir:</strong> 30 Agustus 2009</li>
+        <li><strong>Nomor HP:</strong> 085198268159</li>
+        <li><strong>Sekolah:</strong> SMA Negeri 1 Gringsing</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Hobi & Minat</h2>
+      <ul>
+        <li>Fotografi dan Videografi</li>
+        <li>Ngoding dan membuat bot Telegram</li>
+        <li>Editing video dan desain</li>
+        <li>Main Mobile Legends (Aldous & Yu Zhong)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Proyek</h2>
+      <ul>
+        <li>Website portofolio pribadi</li>
+        <li>Bot AI untuk menjawab soal ujian</li>
+        <li>Proyek HTML & CSS di GitHub Pages</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Kontak</h2>
+      <p>Ingin ngobrol atau kerja sama? Klik tombol di bawah!</p>
+      <a href="https://wa.me/6285198268159" target="_blank" class="whatsapp-btn">Hubungi Saya di WhatsApp</a>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Deva Arista. Dibuat dengan penuh semangat dan gaya!
+  </footer>
+
+</body>
+</html>
